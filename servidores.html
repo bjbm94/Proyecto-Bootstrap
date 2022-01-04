@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Servidores</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark sticky-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav nav-tabs nav-justified">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="index.html">Introducción</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="softwareyhardware.html">Software y Hardware</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="sistemasoperativos.html">Sistemas Operativos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" href="servidores.html">Servidores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="formulario.html">Formulario</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container mt-5">
+            <h2 class="text-center">¿Qué es un servidor?</h2>
+            <p>Un servidor es un sistema que proporciona recursos, datos, servicios o programas a otros ordenadores, conocidos como clientes, a través de una red. En teoría, se consideran servidores aquellos ordenadores que comparten recursos con máquinas cliente. Es importante notar que si un servidor se apaga o sufre algún tipo de error, dejará de proporcionar sus servicios. Existen varios tipos de servidores y a continuación, describiremos unos cuantos:</p>
+        </div>
+    </header>
+    <article>
+        <div id="accordion" class="mb-5">
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                        <h6>Servidores de archivos</h6>
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <p>Los servidores de archivos almacenan y distribuyen ficheros que varios clientes o usuarios pueden compartir. Además, el almacenamiento centralizado de archivos ofrece soluciones de copia de seguridad o tolerancia a fallos de forma más sencilla que tratar de proporcionar seguridad e integridad a los archivos en todos y cada uno de los dispositivos de la organización.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseTwo">
+                        <h6>Servidores de aplicaciones</h6>
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <p>Este tipo de servidores sirve para ejecutar aplicaciones de forma remota, en lugar de que los equipos cliente lo hagan localmente. Los servidores de aplicaciones a menudo ejecutan software que hace un uso intensivo de los recursos, y lo comparten para una gran cantidad de usuarios. Al hacerlo, por un lado, solo tenemos que instalar y mantener el software en una única máquina, y evitamos la necesidad de que cada cliente disponga de suficientes recursos de forma local.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseThree">
+                        <h6>Servidores web</h6>
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <p>Uno de los tipos de servidores más abundantes en el mercado actual son los servidores web. Un servidor web es un tipo especial de servidor de aplicaciones que aloja programas y datos solicitados por los usuarios a través de internet o en una intranet. Los servidores web responden a las solicitudes de páginas web u otros servicios basados en la web que llegan de los navegadores que se ejecutan en los ordenadores cliente.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="container-fluid fixed-bottom pt-1 bg-dark text-light text-center">
+            <p>Realizado por: Bryan Barral Medina</p>
+        </div>
+    </footer>
+</body>
+</html>

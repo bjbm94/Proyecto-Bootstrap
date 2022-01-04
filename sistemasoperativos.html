@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Sistemas Operativos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark sticky-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav nav-tabs nav-justified">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="index.html">Introducción</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="softwareyhardware.html">Software y Hardware</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" href="sistemasoperativos.html">Sistemas Operativos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="servidores.html">Servidores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="formulario.html">Formulario</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container mt-5">
+            <h2 class="text-center">¿Qué es un sistema operativo (SO)?</h2>
+            <p>Un sistema operativo (SO o, frecuentemente, OS —del inglés operating system—) es el conjunto de programas de un sistema informático que gestiona los recursos de hardware y provee servicios a los programas de aplicación de software. Ahora hablaremos un poquito de los más populares:</p>
+        </div>
+    </header>
+    <article>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                        <h6>Microsoft Windows</h6>
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <p>Windows es, quizá, el más genérico de todos los sistemas operativos actuales. Creado en 1985, ofrece la mayor gama de aplicaciones para software. Al mismo tiempo, es el que ofrece mayor flexibilidad para la introducción de actualizaciones. Sin embargo, esto también le otorga una alta dosis de inestabilidad y vulnerabilidad, sobre todo en lo que se refiere a los virus que eventualmente pueden atacar el sistema. Es funcional para cualquier tipo de usuario: novel, iniciado, medio, avanzado o experto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseTwo">
+                        <h6>Linux</h6>
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <p>Es el sistema operativo «libre» por excelencia. Lleva varios años desarrollándose a la par de las grandes marcas. Entre sus principales ventajas destacan una mayor potencia, estabilidad, seguridad ante amenazas externas y la posibilidad de modificar el sistema según las preferencias individuales. De hecho, es el sistema ideal para aquellos usuarios a los que les guste experimentar constantemente. Una de sus variantes más conocidas es el sistema Android, empleado para teléfonos móviles de alta gama.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseThree">
+                        <h6>MacOSX</h6>
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <p>Elegante, sencillo, estable. Aunque es exclusivo para los productos de la casa Apple, en los últimos años ha ido ganando presencia entre los consumidores, sobre todo tras el empleo masivo de dispositivos IPod, IPhone e IPad. Es muy útil para aquellos usuarios que no deseen perder tiempo reinsertando aplicaciones o actualizando permisos para su desarrollo. Su principal inconveniente es el alto precio de los productos Apple en el mercado.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <section>
+        <div class="container mx-auto" style="width:9%">
+            <span class="badge bg-secondary">Logos de los SO</span>
+        </div>
+        <div class="container-fluid pt-3 mb-5 bg-dark">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="windows.png" alt="Placa base" class="mx-auto d-block">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="linux.png" alt="Teclado" class="mx-auto d-block">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="osx.png" alt="Tarjeta gráfica" class="mx-auto d-block"> 
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid fixed-bottom pt-1 bg-dark text-light text-center">
+            <p>Realizado por: Bryan Barral Medina</p>
+        </div>
+    </footer>
+</body>
+</html>

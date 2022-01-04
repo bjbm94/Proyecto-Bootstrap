@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Software y Hardware</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark sticky-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav nav-tabs nav-justified">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="index.html">Introducción</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" href="softwareyhardware.html">Software y Hardware</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="sistemasoperativos.html">Sistemas Operativos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="servidores.html">Servidores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="formulario.html">Formulario</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container mt-5">
+            <h2 class="text-center">¿Qué es un sistema informático?</h2>
+            <p>Un sistema informático (SI) es un sistema que permite almacenar y procesar información. Los sistemas informáticos suelen estructurarse en subsistemas:</p>
+        </div>
+    </header>
+    <article>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                        <h6>Subsistema lógico (Software)</h6>
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <p>Se conoce como software o soporte lógico al sistema formal de un sistema informático, que comprende el conjunto de los componentes lógicos necesarios que hace posible la realización de tareas específicas, en contraposición a los componentes físicos que son llamados hardware. La interacción entre el software y el hardware hace operativo un ordenador (u otro dispositivo), es decir, el software envía instrucciones que el hardware ejecuta, haciendo posible su funcionamiento. El software comprende el sistema operativo, firmware, aplicaciones y bases de datos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseTwo">
+                        <h6>Subsistema físico (Hardware)</h6>
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <p>El hardware, equipo o soporte físico en informática se refiere a las partes físicas, tangibles, de un sistema informático, sus componentes eléctricos, electrónicos, electromecánicos. Los cables, así como los muebles o cajas, los periféricos de todo tipo, y cualquier otro elemento físico involucrado, componen el hardware o soporte físico; contrariamente, el soporte lógico e intangible es el llamado software.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <section>
+        <div class="container mx-auto" style="width:9%">
+            <span class="badge bg-secondary">Imágenes hardware</span>
+        </div>
+        <div class="container-fluid pt-3 mb-5 bg-dark">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="hardware1.jpg" alt="Placa base" class="mx-auto d-block">
+                        <div class="carousel-caption">
+                            <h3>Placa base</h3>
+                            <p>Ejemplo hardware</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="hardware2.jpg" alt="Teclado" class="mx-auto d-block">
+                        <div class="carousel-caption">
+                            <h3>Teclado</h3>
+                            <p>Ejemplo hardware</p>
+                        </div> 
+                    </div>
+                    <div class="carousel-item">
+                        <img src="hardware3.jpg" alt="Tarjeta gráfica" class="mx-auto d-block">
+                        <div class="carousel-caption">
+                            <h3>Tarjeta gráfica</h3>
+                            <p>Ejemplo hardware</p>
+                        </div>  
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid fixed-bottom pt-1 bg-dark text-light text-center">
+            <p>Realizado por: Bryan Barral Medina</p>
+        </div>
+    </footer>
+</body>
+</html>

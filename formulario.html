@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Formulario</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark sticky-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav nav-tabs nav-justified">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="index.html">Introducción</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="softwareyhardware.html">Software y Hardware</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="sistemasoperativos.html">Sistemas Operativos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="servidores.html">Servidores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" href="#Formulario">Formulario</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container mt-5">
+            <h2 class="text-center">Formulario de registro</h2>
+            <p>Si quieres registrarte y ayudar a expandir esta página con más informacion o ayudar a mejorarla en cualquier otro sentido, rellena este formulario:</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Instrucciones</button>
+        </div>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Instrucciones del formulario</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Usuario: <small>Escribe un nombre para tu usuario de máximo 10 caractéres.</small></h5>
+                        <h5>Nombre completo: <small>En la primera casilla escribe tu nombre y en la segunda escribe tus dos apellidos. Se admiten espacios y apóstrofes.</small></h5>
+                        <h5>Email: <small> Escriba su email que debe estar en el siguiente orden: "caracteres @ caracteres . dominio" (caracteres seguidos de un signo @, seguidos de más caracteres y luego un "." y por último, el dominio al que pertenezca su email).</small></h5>
+                        <h5>Contraseña: <small>Escriba la contraseña para conectarse con su usuario.</small></h5>
+                        <h4>Todos los campos son obligatorios.</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container mt-3 mb-5 pb-3">
+            <form action="bryanbarral87@gmail.com" method="post" class="was-validated">
+                <span class="badge rounded-pill bg-danger mb-1">Obligatorio</span>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Usuario</span>
+                    <input type="text" class="form-control" placeholder="Nombre de usuario" name="nombreusuario" maxlength="10" required>
+                    <div class="valid-feedback">Válido.</div>
+                </div>
+                <span class="badge rounded-pill bg-danger mb-1">Obligatorio</span>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Nombre completo</span>
+                    <input type="text" class="form-control" placeholder="Nombre" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ ']{2,}" required>
+                    <div class="valid-feedback">Válido.</div>
+                    <input type="text" class="form-control" placeholder="Apellidos" pattern="([a-zA-ZñÑáéíóúÁÉÍÓÚüÜ ']{2,}) ([a-zA-ZñÑáéíóúÁÉÍÓÚüÜ ']{2,})" required>
+                    <div class="valid-feedback">Válido.</div>
+                </div>
+                <span class="badge rounded-pill bg-danger mb-1">Obligatorio</span>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Email</span>
+                    <input type="email" class="form-control" placeholder="Ejemplo@email.com" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <div class="valid-feedback">Válido.</div>
+                </div>
+                <span class="badge rounded-pill bg-danger mb-1">Obligatorio</span>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Contraseña</span>
+                    <input type="password" class="form-control" placeholder="Tu contraseña" name="contraseña" required>
+                    <div class="valid-feedback">Válido.</div>
+                </div>
+                <input type="submit" value="enviar">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid fixed-bottom pt-1 bg-dark text-light text-center">
+            <p>Realizado por: Bryan Barral Medina</p>
+        </div>
+    </footer>
+</body>
+</html>
